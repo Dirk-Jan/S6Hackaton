@@ -3,22 +3,23 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
 
 const routes: Routes = [
-    {
-        path: '',
+{
+  path: '',
         component: ContentLayoutComponent,
         children: [
         ]
-    },
-    // Fallback when no prior routes is matched
-    { path: '**', redirectTo: '/auth/login', pathMatch: 'full' }
+},
+
+  // Fallback when no prior routes is matched
+  { path: '**', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 
 @NgModule({
-    imports: [
-        RouterModule.forRoot(routes)
-    ],
-    exports: [
-        RouterModule
-    ],
+  imports: [
+      RouterModule.forRoot(routes)
+  ],
+  exports: [
+      RouterModule
+  ],
 })
 export class AppRoutingModule { }

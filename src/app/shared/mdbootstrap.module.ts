@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
@@ -9,5 +9,6 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     exports: [
         MDBBootstrapModule
     ],
+    schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class MdbootstrapModule { }
