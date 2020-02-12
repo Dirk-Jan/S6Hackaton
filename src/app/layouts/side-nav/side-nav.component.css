@@ -9,3 +9,17 @@
 .btnGroup {
   width: 94%;
 }
+
+.sideBtn {
+  padding-top: 20px;
+}
+
+#button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.sideCard {
+  margin-top: 20px;
+  width: 100%;
+}
