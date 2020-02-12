@@ -8,13 +8,14 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { NavComponent } from './layouts/nav/nav.component';
 import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SideNavComponent } from './layouts/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ContentLayoutComponent,
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
