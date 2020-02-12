@@ -1,1 +1,11 @@
 <router-outlet></router-outlet>
+
+<div *ngFor="let c of consumers">
+    <li>
+        Consumer Id: {{c.Id}}
+        <ul>
+            electricity costs:
+            {{c.electricityPrice}}
+        </ul>
+    </li>
+</div>
