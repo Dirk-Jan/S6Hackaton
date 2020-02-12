@@ -1,15 +1,25 @@
-<h1>Jaaroverzicht {{year}}</h1>
+<div class="personaloverview">
+  <h2>Annual overview {{year}}</h2>
+
+  <br>
+  <br>
+
+  <div style="display: block;">
+    <canvas mdbChart
+      [chartType] = "chartType"
+      [datasets] = "chartDatasets"
+      [labels] = "chartLabels"
+      [colors] = "chartColors"
+      [legend] = "true"
+      (chartHover) = "chartHovered($event)">
+    </canvas>
+  </div>
+</div>
 
 <br>
 <br>
+<br>
 
-<div style="display: block;">
-  <canvas mdbChart
-    [chartType] = "chartType"
-    [datasets] = "chartDatasets"
-    [labels] = "chartLabels"
-    [colors] = "chartColors"
-    [legend] = "true"
-    (chartHover) = "chartHovered($event)">
-  </canvas>
+<div class="contract">
+  <app-contract></app-contract>
 </div>

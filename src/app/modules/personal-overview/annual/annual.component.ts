@@ -6,24 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./annual.component.css']
 })
 export class AnnualComponent implements OnInit {
+
   public chartType = 'bar';
   public year = 2019;
 
   public chartDatasets: Array<any> = [
-    { data: [65, 59, 80, 81, 56, 55, 41, 43, 49, 52, 70, 88] }
+    { data: [265, 259, 277, 271, 256, 250, 244, 247, 249, 256, 265, 276] }
   ];
 
   public chartLabels: Array<any> = [
-    'Januari',
-    'Februari',
-    'Maart',
+    'January',
+    'February',
+    'March',
     'April',
-    'Mei',
-    'Juni',
-    'Juli',
-    'Augustus',
+    'May',
+    'June',
+    'July',
+    'August',
     'September',
-    'Oktober',
+    'October',
     'November',
     'December'
   ];
@@ -74,5 +75,4 @@ export class AnnualComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
