@@ -19,15 +19,12 @@ import { SideNavComponent } from './layouts/side-nav/side-nav.component';
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule,
     // core & shared
     CoreModule,
     SharedModule,
 
     // app
     AppRoutingModule,
-
-    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
