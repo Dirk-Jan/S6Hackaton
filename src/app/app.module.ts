@@ -16,7 +16,6 @@ import { SideNavComponent } from './layouts/side-nav/side-nav.component';
     NavComponent,
     ContentLayoutComponent,
     SideNavComponent,
-    ContentLayoutComponent,
   ],
   imports: [
     BrowserModule,
