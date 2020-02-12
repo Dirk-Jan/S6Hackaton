@@ -3,12 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
 
 const routes: Routes = [
-{
-  path: '',
-        component: ContentLayoutComponent,
-        children: [
-        ]
-},
+  {
+    path: '',
+    component: ContentLayoutComponent,
+    children: [
+      {
+        path: 'company',
+        loadChildren: ()=>
+          import('./modules/company-overview/company-overview.module').then(m => m.CompanyOverviewModule)
+      }
+    ]
+  },
 
   // Fallback when no prior routes is matched
   { path: '**', redirectTo: '/dashboard', pathMatch: 'full' }
@@ -16,10 +21,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-      RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes)
   ],
   exports: [
-      RouterModule
+    RouterModule
   ],
 })
 export class AppRoutingModule { }

@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { NavComponent } from './layouts/nav/nav.component';
 import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,13 +18,15 @@ import { ContentLayoutComponent } from './layouts/content-layout/content-layout.
   ],
   imports: [
     BrowserModule,
-
+    FontAwesomeModule,
     // core & shared
     CoreModule,
     SharedModule,
 
     // app
-    AppRoutingModule
+    AppRoutingModule,
+
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
