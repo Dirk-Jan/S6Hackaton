@@ -7,6 +7,11 @@ const routes: Routes = [
   path: '',
         component: ContentLayoutComponent,
         children: [
+          {
+            path: 'personaloverview',
+            loadChildren: () =>
+              import('./modules/personal-overview/personal-overview.module').then(m => m.PersonalOverviewModule)
+          }
         ]
 },
 

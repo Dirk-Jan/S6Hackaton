@@ -1,0 +1,15 @@
+<h1>Jaaroverzicht {{year}}</h1>
+
+<br>
+<br>
+
+<div style="display: block;">
+  <canvas mdbChart
+    [chartType] = "chartType"
+    [datasets] = "chartDatasets"
+    [labels] = "chartLabels"
+    [colors] = "chartColors"
+    [legend] = "true"
+    (chartHover) = "chartHovered($event)">
+  </canvas>
+</div>

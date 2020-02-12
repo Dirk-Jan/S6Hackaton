@@ -13,7 +13,7 @@ import { ContentLayoutComponent } from './layouts/content-layout/content-layout.
   declarations: [
     AppComponent,
     NavComponent,
-    ContentLayoutComponent,
+    ContentLayoutComponent
   ],
   imports: [
     BrowserModule,
