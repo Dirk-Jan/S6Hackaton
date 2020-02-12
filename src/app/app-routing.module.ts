@@ -7,6 +7,11 @@ const routes: Routes = [
   path: '',
         component: ContentLayoutComponent,
         children: [
+          {
+            path: 'companydashboard',
+            loadChildren: () => import('./modules/company-dashboard/company-dashboard.module')
+              .then(module => module.CompanyDashboardModule)
+          }
         ]
 },
 
