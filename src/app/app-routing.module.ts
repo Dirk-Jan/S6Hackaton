@@ -21,9 +21,15 @@ const routes: Routes = [
             path: 'personaldashboard',
             loadChildren: () => import('./modules/personal-dashboard/personal-dashboard.module')
               .then(module => module.PersonalDashboardModule)
-          }
+          },    
+          {
+        path: 'company',
+        loadChildren: ()=>
+          import('./modules/company-overview/company-overview.module').then(m => m.CompanyOverviewModule)
+      }
         ]
 },
+  
 
   // Fallback when no prior routes is matched
   { path: '**', redirectTo: '/dashboard', pathMatch: 'full' }
@@ -31,10 +37,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-      RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes)
   ],
   exports: [
-      RouterModule
+    RouterModule
   ],
 })
 export class AppRoutingModule { }

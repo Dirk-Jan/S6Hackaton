@@ -1,0 +1,13 @@
+.title {
+    padding: 5px;
+}
+.span-border{
+    border-bottom: 2px solid green;
+    margin-bottom: 10px;
+}
+.card-wrapper {
+    margin-top: 10px;
+}
+.consumer-wrapper {
+    margin-top: 50px;
+}
