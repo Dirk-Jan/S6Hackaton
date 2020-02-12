@@ -9,8 +9,9 @@ export class AnnualComponent implements OnInit {
 
   public chartType = 'bar';
   public year = 2019;
+  public totalConsumption = 3115;
 
-  public chartDatasets: Array<any> = [
+  public chartDataset: Array<any> = [
     { data: [265, 259, 277, 271, 256, 250, 244, 247, 249, 256, 265, 276] }
   ];
 
@@ -71,8 +72,13 @@ export class AnnualComponent implements OnInit {
 
   public chartHovered(e: any): void { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public calculateAnnualTotal(): void {
+    // TODO: Add method
   }
+
+  constructor() {
+    // this.calculateAnnualTotal();
+  }
+
+  ngOnInit(): void { }
 }

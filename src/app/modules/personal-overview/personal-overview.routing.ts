@@ -1,3 +1,4 @@
+import { InvoiceComponent } from './invoice/invoice.component';
 import { ContractComponent } from './contract/contract.component';
 import { AnnualComponent } from './annual/annual.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,6 +15,10 @@ export const routes: Routes = [
       {
         path: 'contract',
         component: ContractComponent
+      },
+      {
+        path: 'invoice',
+        component: InvoiceComponent
       }
     ]
   }

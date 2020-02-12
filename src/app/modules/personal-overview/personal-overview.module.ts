@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AnnualComponent } from './annual/annual.component';
 import { ContractComponent } from './contract/contract.component';
+import { InvoiceComponent } from './invoice/invoice.component';
 
 
 
 @NgModule({
   declarations: [
     AnnualComponent,
-    ContractComponent
+    ContractComponent,
+    InvoiceComponent
   ],
   imports: [
     CommonModule,

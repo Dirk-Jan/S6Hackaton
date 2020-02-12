@@ -7,13 +7,15 @@
   <div style="display: block;">
     <canvas mdbChart
       [chartType] = "chartType"
-      [datasets] = "chartDatasets"
+      [datasets] = "chartDataset"
       [labels] = "chartLabels"
       [colors] = "chartColors"
       [legend] = "true"
       (chartHover) = "chartHovered($event)">
     </canvas>
   </div>
+
+  <h4>Total consumption: {{totalConsumption}}</h4>
 </div>
 
 <br>
@@ -22,4 +24,7 @@
 
 <div class="contract">
   <app-contract></app-contract>
+  <br>
+  <br>
+
 </div>
