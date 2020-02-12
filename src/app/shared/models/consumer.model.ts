@@ -1,8 +1,9 @@
-import { Place } from './place.model';
 import { ElectricityPerDay } from './electricityPerDay.model';
+import { Place } from './place.model';
 
 export interface Consumer {
-    electricityPrice: string; 
+    Id: number; 
     place: Place;
+    electricityCosts: string; 
     electricityConsumedPerDay: ElectricityPerDay[];
 }

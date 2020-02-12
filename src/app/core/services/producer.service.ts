@@ -9,7 +9,7 @@ import { Producer } from 'src/app/shared/models/producer.model';
   })
   export class ProducerService {
 
-    baseUrl: string = environment.apiUrl + 'producers';
+    baseUrl: string = environment.producerUrl + '/producers';
 
     constructor(private http: HttpClient) { }
 

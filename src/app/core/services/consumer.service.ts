@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
   })
   export class ConsumerService {
 
-    baseUrl: string = environment.apiUrl + 'consumers';
+    private baseUrl: string = environment.consumerUrl + '/consumers';
 
     constructor(private http: HttpClient) { }
 
