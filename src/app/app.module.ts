@@ -14,8 +14,8 @@ import { SideNavComponent } from './layouts/side-nav/side-nav.component';
   declarations: [
     AppComponent,
     NavComponent,
-    SideNavComponent,
     ContentLayoutComponent,
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
