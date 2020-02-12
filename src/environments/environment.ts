@@ -4,9 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:',
-  consumerUrl: this.baseUrl + '3000',
-  producerUrl: this.baseUrl + '3001'
+  consumerUrl: 'http://localhost:3000',
+  producerUrl: 'http://localhost:3001'
 };
 
 /*
