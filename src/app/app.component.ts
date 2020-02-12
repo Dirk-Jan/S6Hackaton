@@ -13,6 +13,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.getConsumers();
+    this.getProducers();
   }
 
   consumers: Consumer[] = [];
