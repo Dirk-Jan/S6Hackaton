@@ -19,13 +19,12 @@ import { SideNavComponent } from './layouts/side-nav/side-nav.component';
   ],
   imports: [
     BrowserModule,
-
     // core & shared
     CoreModule,
     SharedModule,
 
     // app
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

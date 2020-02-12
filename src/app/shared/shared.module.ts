@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MdbootstrapModule } from './mdbootstrap.module';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
     imports: [
         CommonModule,
@@ -18,7 +18,8 @@ import { MdbootstrapModule } from './mdbootstrap.module';
         FormsModule,
         ReactiveFormsModule,
         RouterModule,
-        MdbootstrapModule
+        MdbootstrapModule,
+        FontAwesomeModule
     ]
 })
 export class SharedModule { }
