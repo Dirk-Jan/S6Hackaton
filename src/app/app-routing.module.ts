@@ -11,6 +11,11 @@ const routes: Routes = [
             path: 'personaloverview',
             loadChildren: () =>
               import('./modules/personal-overview/personal-overview.module').then(m => m.PersonalOverviewModule)
+          },
+          {
+            path: 'personaldashboard',
+            loadChildren: () => import('./modules/personal-dashboard/personal-dashboard.module')
+            .then(module => module.PersonalDashboardModule)
           }
         ]
 },

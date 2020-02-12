@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col">
+        <div style="display: block">
+            <canvas mdbChart
+                [chartType]="chartType"
+                [datasets]="chartDatasets"
+                [labels]="chartLabels"
+                [colors]="chartColors"
+                [options]="chartOptions"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+            </canvas>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col"><p>Cost consumed energy: &euro;{{consumedCost}}</p></div>
+    <div class="col"><p>Earnings produced energy: &euro;{{producedCost}}</p></div>
+  </div>
+
+
+  
