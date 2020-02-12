@@ -13,7 +13,7 @@ import { Producer } from 'src/app/shared/models/producer.model';
 
     constructor(private http: HttpClient) { }
 
-    getConsumers(): Observable<Producer[]>{
+    getProducers(): Observable<Producer[]>{
         return this.http.get<Producer[]>(this.baseUrl); 
       }
   }
