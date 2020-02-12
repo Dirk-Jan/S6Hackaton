@@ -8,6 +8,11 @@ const routes: Routes = [
     component: ContentLayoutComponent,
     children: [
       {
+        path: '',
+        loadChildren: () => import('./modules/home-overview/home-overview.module')
+          .then(module => module.HomeOverviewModule)
+      },
+      {
         path: 'companydashboard',
         loadChildren: () => import('./modules/company-dashboard/company-dashboard.module')
           .then(module => module.CompanyDashboardModule)

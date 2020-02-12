@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<div class="sidebar position-fixed'sideNav">
+<!-- <div class="sidebar position-fixed'sideNav">
   <div class="col-sm-12 logoPNG">
     <a class="logo-wrapper waves-effect">
       <img src="../../../../assets/img/light-bulb.png" class="img-fluid" alt="">
@@ -34,5 +34,23 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- Sidebar -->
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <div class="col-sm-12 logoPNG">
+    <a [routerLink]="['/']" class="logo-wrapper waves-effect">
+      <img src="../../../../assets/img/light-bulb.png" class="img-fluid" alt="">
+    </a>
+  </div>
+  <hr>
+  <a [routerLink]="['/personaldashboard']">Personal Dashboard</a>
+  <hr>
+  <a [routerLink]="['/personaloverview']">Personal Overview</a>
+  <hr>
+  <a [routerLink]="['/companydashboard']">Company Dashboard</a>
+  <hr>
+  <a [routerLink]="['/companyoverview']">Company Overview</a>
+  <hr>
+</div>

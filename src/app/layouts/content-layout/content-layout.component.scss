@@ -6,14 +6,13 @@
   margin-top: 3%;
 }
 
-.sideNav {
-  border-right: 1px solid green;
-  border-bottom: 1px solid green;
-  padding: 20px;
+.contentClass {
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 
-// @media (max-width: 768px) {
-//   .sideNav {
-//     visibility: hidden;
-//   }
-// }
+@media (max-width: 991px) {
+  .sideNav {
+    visibility: hidden;
+  }
+}
