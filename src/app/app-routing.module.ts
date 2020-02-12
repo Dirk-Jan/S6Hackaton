@@ -8,14 +8,19 @@ const routes: Routes = [
         component: ContentLayoutComponent,
         children: [
           {
+            path: 'companydashboard',
+            loadChildren: () => import('./modules/company-dashboard/company-dashboard.module')
+              .then(module => module.CompanyDashboardModule)
+          },
+          {
             path: 'personaloverview',
-            loadChildren: () =>
-              import('./modules/personal-overview/personal-overview.module').then(m => m.PersonalOverviewModule)
+            loadChildren: () => import('./modules/personal-overview/personal-overview.module')
+                .then(m => m.PersonalOverviewModule)
           },
           {
             path: 'personaldashboard',
             loadChildren: () => import('./modules/personal-dashboard/personal-dashboard.module')
-            .then(module => module.PersonalDashboardModule)
+              .then(module => module.PersonalDashboardModule)
           }
         ]
 },
