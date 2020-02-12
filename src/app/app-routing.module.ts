@@ -7,6 +7,11 @@ const routes: Routes = [
   path: '',
         component: ContentLayoutComponent,
         children: [
+          {
+            path: 'personaldashboard',
+            loadChildren: () => import('./modules/personal-dashboard/personal-dashboard.module')
+            .then(module => module.PersonalDashboardModule)
+          }
         ]
 },
 
