@@ -1,0 +1,39 @@
+<div class="personaloverview">
+  <div class="pageheading">
+    <h2>Annual overview</h2>
+    <select class="browser-default custom-select">
+      <option selected>2019</option>
+    </select>
+  </div>
+
+  <br>
+  <br>
+
+  <div style="display: block;">
+    <canvas mdbChart
+      [chartType] = "chartType"
+      [datasets] = "chartDataset"
+      [labels] = "chartLabels"
+      [colors] = "chartColors"
+      [legend] = "true"
+      (chartHover) = "chartHovered($event)">
+    </canvas>
+  </div>
+
+  <br>
+
+  <h4>Total annual consumption: {{totalConsumption}}</h4>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="contract">
+  <app-contract></app-contract>
+  <br>
+
+  <a routerLink="/personaloverview/invoice" routerLinkActivate="active" class="btn btn-success">Invoices</a>
+
+  <br>`
+</div>
