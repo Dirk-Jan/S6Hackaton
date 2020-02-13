@@ -24,14 +24,12 @@ export class PersonalDashboardComponent implements OnInit {
   getConsumers(){
     this.consumerService.getConsumers().subscribe(c =>{
       this.consumers = c;
-      // this.consumers.forEach(c => {
-      //   this.data.push[c.electricityConsumedPerDay, 5000,0]
-      // });
       this.chartDatasets = [
-        { data: this.consumers[0].electricityConsumedPerDay, label: 'This Month' }
+        { data: [this.consumers[0].electricityConsumedPerDay[0].power,6824,0], label: 'This Month' }
       ];
       this.dataloaded = true;
       console.log(this.consumers);
+      console.log(this.consumers[0].electricityConsumedPerDay);
     } );
   }
 
