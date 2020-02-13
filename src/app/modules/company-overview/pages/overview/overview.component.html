@@ -1,0 +1,207 @@
+<div class="container">
+  <div class="span-border">
+    <h3 class="title"><i class="fa fa-industry"></i> Producers </h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-4 card-wrapper">
+      <mdb-card>
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="assets\images\company\Dodewaardcentrale.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <mdb-card-body class="text-center pb-0">
+          <h4 class="card-title">
+            <strong>Dodewaard</strong>
+          </h4>
+          <h5 class="blue-text">
+            <strong>Nucleare powerplant</strong>
+          </h5>
+
+          <mdb-card-text>
+            <div class="col">
+              <p>Status: Online</p>
+            </div>
+            <div class="col">
+              <p>Produced energy: <strong class="text-success">13,968 (MWh).</strong> </p>
+            </div>
+            <div class="col">
+              <p>Comsumed energy: <strong class="text-warning">8,934 (MWh).</strong></p>
+            </div>
+          </mdb-card-text>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary">Details</button>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 card-wrapper">
+      <mdb-card>
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="assets\images\company\Maasvlakte.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <mdb-card-body class="text-center pb-0">
+          <h4 class="card-title">
+            <strong>Centrale Maasvlakte</strong>
+          </h4>
+          <h5 class="blue-text">
+            <strong>coal-fired power station</strong>
+          </h5>
+
+          <mdb-card-text>
+            <div class="col">
+              <p>Status: Online</p>
+            </div>
+            <div class="col">
+              <p>Produced energy: <strong class="text-success">8,569 (MWh).</strong> </p>
+            </div>
+            <div class="col">
+              <p>Comsumed energy: <strong class="text-warning">4,674 (MWh).</strong></p>
+            </div>
+          </mdb-card-text>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary">Details</button>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 card-wrapper">
+      <mdb-card>
+        <div mdbWavesEffect>
+          <mdb-card-img src="assets\images\company\Noordoostpolder-windmolenpar.JPG"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <mdb-card-body class="text-center pb-0">
+          <h4 class="card-title">
+            <strong>Windpark Noordoostpolder</strong>
+          </h4>
+          <h5 class="blue-text">
+            <strong>Wind Farm</strong>
+          </h5>
+          <mdb-card-text>
+            <div class="col">
+              <p>Status: Online</p>
+            </div>
+            <div class="col">
+              <p>Produced energy: <strong class="text-success">3,579 (MWh).</strong> </p>
+            </div>
+            <div class="col">
+              <p>Comsumed energy: <strong class="text-warning">2,354 (MWh).</strong></p>
+            </div>
+          </mdb-card-text>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary">Details</button>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="consumer-wrapper">
+  <div class="span-border">
+    <h3 class="title">High consumers</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div style="display: block">
+        <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
+          [colors]="chartColors" [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+    </div>
+    <div class="col col-sm-8 col-lg" style="margin: 20px;">
+      <table mdbTable>
+        <thead>
+          <tr>
+            <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr mdbTableCol *ngFor="let el of elements">
+            <th scope="row">{{el.CustomerId}}</th>
+            <td>{{el.Company}}</td>
+            <td>{{el.Consumed}}</td>
+            <td>{{el.Average}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="col consumer-wrapper">
+  <div class="span-border col">
+    <h3 class="title">Medium consumers</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div style="display: block">
+        <canvas mdbChart [chartType]="chartType" [datasets]="mdchartDatasets" [labels]="mdchartLabels"
+          [colors]="mdchartColors" [options]="mdchartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+    </div>
+    <div class="col col-sm-8 col-lg">
+      <table mdbTable>
+        <thead>
+          <tr>
+            <th *ngFor="let head of mdheadElements" scope="col">{{head}} </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr mdbTableCol *ngFor="let el of mdelements">
+            <th scope="row">{{el.CustomerId}}</th>
+            <td>{{el.Community}}</td>
+            <td>{{el.Consumed}}</td>
+            <td>{{el.Average}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="col consumer-wrapper">
+  <div class="span-border col">
+    <h3 class="title">Low consumers</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div style="display: block">
+        <canvas mdbChart [chartType]="chartType" [datasets]="lchartDatasets" [labels]="lchartLabels"
+          [colors]="lchartColors" [options]="lchartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+    </div>
+    <div class="col col-sm-8 col-lg">
+      <table mdbTable>
+        <thead>
+          <tr>
+            <th *ngFor="let head of lheadElements" scope="col">{{head}} </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr mdbTableCol *ngFor="let el of lelements">
+            <th scope="row">{{el.CustomerId}}</th>
+            <td>{{el.Name}}</td>
+            <td>{{el.Consumed}}</td>
+            <td>{{el.Average}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

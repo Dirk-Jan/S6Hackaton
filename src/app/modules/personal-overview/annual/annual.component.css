@@ -1,0 +1,15 @@
+h2 {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+select {
+  display: inline-block;
+  width: 6em;
+}
+
+.pageheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
