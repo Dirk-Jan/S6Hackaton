@@ -1,11 +1,56 @@
 <!-- Sidebar -->
-<div class="sidebar-fixed position-fixed'sideNav">
+<!-- <div class="sidebar position-fixed'sideNav">
   <div class="col-sm-12 logoPNG">
     <a class="logo-wrapper waves-effect">
       <img src="../../../../assets/img/light-bulb.png" class="img-fluid" alt="">
     </a>
   </div>
   <div class="container">
+    <div class="row">
+      <div class="sideCard card">
+        <h5 class="card-header h5 light-green">Personal</h5>
+        <div class="card-body">
+          <p class="card-text">Consumer related content.</p>
+          <div class="sideBtn col-sm-12">
+            <button [routerLink]="['/personaldashboard']" id="button" type="button" class="btn btn-secondary">Personal Dashboard</button>
+          </div>
+          <div class="col-sm-12">
+            <button [routerLink]="['/personaloverview']"  id="button" type="button" class="btn btn-secondary">Personal Overview</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sideCard card">
+        <h5 class="card-header h5 light-green">Company</h5>
+        <div class="card-body">
+          <p class="card-text">Producer related content.</p>
+          <div class="col-sm-12">
+            <button [routerLink]="['/companydashboard']"  id="button" type="button" class="btn btn-secondary">Company Dashboard</button>
+          </div>
+          <div class="col-sm-12">
+            <button [routerLink]="['/companyoverview']"  id="button" type="button" class="btn btn-secondary">Company Overview</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</div> -->
 <!-- Sidebar -->
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <div class="col-sm-12 logoPNG">
+    <a [routerLink]="['/']" class="logo-wrapper waves-effect">
+      <img src="../../../../assets/img/light-bulb.png" class="img-fluid" alt="">
+    </a>
+  </div>
+  <hr>
+  <a [routerLink]="['/personaldashboard']">Personal Dashboard</a>
+  <hr>
+  <a [routerLink]="['/personaloverview']">Personal Overview</a>
+  <hr>
+  <a [routerLink]="['/companydashboard']">Company Dashboard</a>
+  <hr>
+  <a [routerLink]="['/companyoverview']">Company Overview</a>
+  <hr>
+</div>
