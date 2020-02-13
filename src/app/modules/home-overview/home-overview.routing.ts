@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CompanyDashboardComponent } from './pages/company-dashboard/company-dashboard.component';
+import { MainComponent } from './pages/main/main.component';
 
 export const routes: Routes = [
     {
@@ -8,7 +8,7 @@ export const routes: Routes = [
         children: [
             {
                 path: '',
-                component: CompanyDashboardComponent
+                component: MainComponent
             },
         ]
     },
@@ -18,4 +18,4 @@ export const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class CompanyDashboardRouting { }
+export class HomeOverviewRouting { }
