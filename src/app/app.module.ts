@@ -9,23 +9,24 @@ import { CoreModule } from './core/core.module';
 import { NavComponent } from './layouts/nav/nav.component';
 import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
 import { SideNavComponent } from './layouts/side-nav/side-nav.component';
+import { FooterComponent } from './layouts/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    SideNavComponent,
     ContentLayoutComponent,
+    SideNavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-
     // core & shared
     CoreModule,
     SharedModule,
 
     // app
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
